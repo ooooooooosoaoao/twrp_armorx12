@@ -1,0 +1,18 @@
+# Ulefone Armor X12 (MT6765)
+
+# Boot & Recovery
+/boot           emmc    /dev/block/by-name/boot_a
+/vendor_boot    emmc    /dev/block/by-name/vendor_boot_a
+/dtbo           emmc    /dev/block/by-name/dtbo_a
+/vbmeta         emmc    /dev/block/by-name/vbmeta_a
+
+# Partizioni system (super)
+/system         ext4    /dev/block/mapper/system
+/vendor         ext4    /dev/block/mapper/vendor
+/product        ext4    /dev/block/mapper/product
+/odm            ext4    /dev/block/mapper/odm
+
+# Data
+/data           ext4    /dev/block/by-name/userdata    flags=encryptable=footer
+
+# Cache non presente → usa /data/cache

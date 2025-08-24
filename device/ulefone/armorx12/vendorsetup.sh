@@ -1,0 +1,2 @@
+add_lunch_combo omni_armorx12-eng
+add_lunch_combo omni_armorx12-userdebug
